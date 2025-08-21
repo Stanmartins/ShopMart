@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import os
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -44,6 +48,8 @@ INSTALLED_APPS = [
     'store', 
     'carts',
     'orders',
+    'cloudinary',
+    'cloudinary_storage',
     'whitenoise.runserver_nostatic'
 ]
 
@@ -98,6 +104,18 @@ DATABASES = {
         "PORT": "10036"
     }
 }
+
+
+# ------------------------
+# Cloudinary Config
+# ------------------------
+CLOUDINARY_STORAGE = {
+    "CLOUD_NAME": os.environ.get("dylccznrb"),
+    "API_KEY": os.environ.get("692951399443849"),
+    "API_SECRET": os.environ.get("Wtww69zYSXGq_zaK5KEQkAE4Wd8"),
+}
+
+DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
 
 # Password validation
