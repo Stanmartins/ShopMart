@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-epvybl(yfem_t4dn@szodj_x2ds&asy3^aa*qe02jfb^p)vcfc
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['https://shopmart-znb8.onrender.com']
+CSRF_TRUSTED_ORIGINS = []
 
 
 # Application definition
