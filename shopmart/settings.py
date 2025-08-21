@@ -32,7 +32,7 @@ DEBUG = True
 TEST_PRODUCTION = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['https://shopmart-1-1nfo.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://shopmart-b6zo.onrender.com']
 
 
 # Application definition
