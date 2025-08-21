@@ -28,11 +28,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-epvybl(yfem_t4dn@szodj_x2ds&asy3^aa*qe02jfb^p)vcfc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 TEST_PRODUCTION = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = ['https://shopmart-1-1nfo.onrender.com']
 
 
 # Application definition
