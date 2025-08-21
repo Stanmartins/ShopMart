@@ -29,6 +29,7 @@ SECRET_KEY = 'django-insecure-epvybl(yfem_t4dn@szodj_x2ds&asy3^aa*qe02jfb^p)vcfc
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+TEST_PRODUCTION = True
 
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = []
@@ -109,11 +110,19 @@ DATABASES = {
 # ------------------------
 # Cloudinary Config
 # ------------------------
-CLOUDINARY_STORAGE = {
-    "CLOUD_NAME": os.environ.get("dylccznrb"),
-    "API_KEY": os.environ.get("692951399443849"),
-    "API_SECRET": os.environ.get("Wtww69zYSXGq_zaK5KEQkAE4Wd8"),
-}
+
+# CLOUDINARY_STORAGE = {
+#     "CLOUD_NAME": os.getenv("dylccznrb"),
+#     "API_KEY": os.getenv("692951399443849"),
+#     "API_SECRET": os.getenv("Wtww69zYSXGq_zaK5KEQkAE4Wd8"),
+# }
+
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': 'dylccznrb',
+#     'API_KEY': '692951399443849',
+#     'API_SECRET': 'Wtww69zYSXGq_zaK5KEQkAE4Wd8',
+# }
+
 
 DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
