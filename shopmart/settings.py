@@ -87,15 +87,13 @@ AUTH_USER_MODEL = 'accounts.Account'  # Set custom user model
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    # 
-    
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': "railway",
         "USER": "postgres",
-        "PASSWORD": "ENSdtBtnZQgofRgmBiPvLLRKuMBBbRbg",
-        "HOST": "interchange.proxy.rlwy.net",
-        "PORT": "10036"
+        "PASSWORD": "rzXVbuXwzikeSdyUPomlXRgZZOCVKiFR",
+        "HOST": "shinkansen.proxy.rlwy.net",
+        "PORT": "20121"
     }
 }
 
@@ -166,13 +164,13 @@ MESSAGE_TAGS = {
 # EMAIL_USE_TLS = True
 
 
-# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = "miguelstanmartins@gmail.com"
-EMAIL_HOST_PASSWORD = "uxgh ejez mmce gaxq"   # Not your Gmail password, use App Passwords
+EMAIL_HOST_PASSWORD = "gnnl rpod layl locn"   # Not your Gmail password, use App Passwords
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 
