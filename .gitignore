@@ -1,0 +1,6 @@
+# Environment
+.env
+
+# Media
+media/
+staticfiles/
